@@ -27,15 +27,18 @@ hr {
 
 .bg-red {
     background-color: #f75353 !important;
+    
 }
 
 .bg-green {
     background-color: #51d466 !important;
+    
 }
 
 /* General CSS */
 body {
-    background: #f4f8fd;
+    /*background: #f4f8fd;*/
+    background: skyblue;
 }
 /* UI - X */
 .movie-ticket {
@@ -97,6 +100,7 @@ body {
 /* Details */
 .movie-ticket .ui-trans .ui-details {
     margin-left: 205px;
+    position:center;
 }
 
 @media(max-width: 660px) {
