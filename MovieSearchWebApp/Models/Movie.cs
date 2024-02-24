@@ -1,0 +1,24 @@
+﻿namespace MovieSearchWebApp.Models
+{
+    public class Movie
+    {//(poster, description, IMDB score
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Year { get; set; }
+        public string Rated { get; set; }
+        public DateOnly Released { get; set; }
+        public string Runtime { get; set; }
+        public string Genre { get; set; }
+        public string Director { get; set; }
+        public string Writer { get; set; }
+        public string Actors { get; set; }
+        public byte[] Poster { get; set; }
+        public string Plot { get; set; }
+        //public string Description { get; set; }
+        public string Language { get; set; }
+        public string Country { get; set; }
+        public string Awards { get; set; }
+        public int IMDBScore { get; set; }
+        public bool Response { get;}
+    }
+}

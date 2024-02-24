@@ -1,0 +1,160 @@
+﻿
+@model MovieSearchWebApp.Models.MovieSearchResponse
+
+@{
+    ViewData["Title"] = "DisplayMovieInfo";
+}
+
+<h1>DisplayMovieInfo</h1>
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="~/css/movie.css" asp-append-version="true" />
+<div class="movie-ticket">
+    <div class="container-fluid">
+        <!-- Item -->
+        <div class="ui-item">
+            <!-- Head -->
+            <div class="ui-head">
+                <!-- Background Image -->
+                <img src="https://www.bootdey.com/image/800x400/48D1CC/000000" alt="" class="img-responsive bg-img">
+                <!-- Transparent Background -->
+                <div class="ui-trans clearfix">
+                    <!-- Image -->
+                    <img src="https://www.bootdey.com/image/300x300/87CEFA/000000" alt="" class="img-responsive">
+                    <!-- Details -->
+                    <div class="ui-details clearfix">
+                        <!-- Movie Name -->
+                        <h2><a href="#">Awesome Movie</a></h2>
+                        <!-- Labels -->
+                        <a href="#" class="label">2014</a>
+                        <a href="#" class="label">PG - 13</a>
+                        <a href="#" class="label">143 min</a>
+                        <a href="#" class="label">Action</a>
+                        <a href="#" class="label">Adventures</a>
+                        <!-- Paragraph -->
+                        <p>Brief story about the movie.</p>
+                        <!-- Heading -->
+                        <h4><span>Title</span>:</h4>
+                        <!-- Director Name -->
+                        <h5><a href="#">@Model.Title</a></h5>
+                        <!-- Heading -->
+                        <h4><span>Year</span>:</h4>
+                        <!-- Which year -->
+                        <h5><a href="#">@Model.Year</a></h5>
+                        <!-- Heading -->
+                        <h4><span>Rated</span>:</h4>
+                        <!-- Director Name -->
+                        <h5><a href="#">@Model.Rated</a></h5>
+                        <!-- Heading -->
+                        <h4><span>Released</span>:</h4>
+                        <!-- Director Name -->
+                        <h5><a href="#">@Model.Released</a></h5>
+                        <!-- Heading -->
+                        <h4><span>Runtime</span>:</h4>
+                        <!-- Director Name -->
+                        <h5><a href="#">@Model.Runtime</a></h5>
+                        <!-- Heading -->
+                        <h4><span>Genre</span>:</h4>
+                        <!-- Director Name -->
+                        <h5><a href="#">@Model.Genre</a></h5>
+                        <!-- Heading -->
+                        <h4><span>Director</span>:</h4>
+                        <!-- Director Name -->
+                        <h5><a href="#">@Model.Director</a></h5>
+                        <!-- Heading -->
+                        <h4><span>Writers</span>:</h4>
+                        <!-- Writers -->
+                        <h5><a href="#"> @Model.Writer</a></h5>
+
+                        <!-- Heading -->
+                        <h4><span>Actor</span>:</h4>
+                        <!-- Actor Name -->
+                        <h5><a href="#">@Model.Actors</a></h5>
+                        <!-- Heading -->
+                        <h4><span>Plot</span>:</h4>
+                        <!-- Description -->
+                        <h5><a href="#">@Model.Plot</a></h5>
+                        
+                        <!-- Heading -->
+                        <h4><span>Language</span>:</h4>
+                        <!-- Description -->
+                        <h5><a href="#">@Model.Language</a></h5>
+                        <!-- Heading -->
+                        <h4><span>Country</span>:</h4>
+                        <!-- Description -->
+                        <h5><a href="#">@Model.Country</a></h5>
+                        <!-- Heading -->
+                        <h4><span>Awards</span>:</h4>
+                        <!-- Description -->
+                        <h5><a href="#">@Model.Awards</a></h5>
+                        <!-- Heading -->
+                        <h4><span>Poster</span>:</h4>
+                        <!-- Poster Name -->
+                        <h5><a href="#">@Model.Poster</a></h5>
+                        <!-- Heading -->
+                        <h4><span>Rating</span>:</h4>
+                        <!-- Description -->
+                        <h5><a href="#">@Model.Ratings</a></h5>
+                        <!-- Heading -->
+                        <h4><span>Metascore</span>:</h4>
+                        <!-- Description -->
+                        <h5><a href="#">@Model.Metascore</a></h5> 
+                        <!-- Heading -->
+                        <h4><span>imdbRating</span>:</h4>
+                        <!-- Description -->
+                        <h5><a href="#">@Model.imdbRating</a></h5>
+                        <!-- Heading -->
+                        <h4><span>imdbVotes</span>:</h4>
+                        <!-- Description -->
+                        <h5><a href="#">@Model.imdbVotes</a></h5>
+                        <!-- Heading -->
+                        <h4><span>imdbID</span>:</h4>
+                        <!-- Description -->
+                        <h5><a href="#">@Model.imdbID</a></h5>
+                        <!-- Heading -->
+                        <h4><span>Type</span>:</h4>
+                        <!-- Description -->
+                        <h5><a href="#">@Model.Type</a></h5>
+                        <!-- Heading -->
+                        <h4><span>DVD</span>:</h4>
+                        <!-- Description -->
+                        <h5><a href="#">@Model.DVD</a></h5>
+                        <!-- Heading -->
+                        <h4><span>BoxOffice</span>:</h4>
+                        <!-- Description -->
+                        <h5><a href="#">@Model.BoxOffice</a></h5>
+                        <!-- Heading -->
+                        <h4><span>Production</span>:</h4>
+                        <!-- Description -->
+                        <h5><a href="#">@Model.Production</a></h5>
+                        <!-- Heading -->
+                        <h4><span>Website</span>:</h4>
+                        <!-- Description -->
+                        <h5><a href="#">@Model.Website</a></h5>
+                        <!-- Heading -->
+                        <h4><span>Response</span>:</h4>
+                        <!-- Description -->
+                        <h5><a href="#">@Model.Response</a></h5>
+                   </div>
+                </div>
+            </div>
+            <!-- Review -->
+            <div class="ui-review">
+                <!-- Heading -->
+                <h3>Brief Story</h3>
+                <!-- Paragraph -->
+                <p>@Model.Plot</p>
+                <!-- Buttons -->
+                <a href="#" class="ui-btn bg-red"><i class="fa fa-ticket"></i> Buy Tickets</a>
+                <a href="#" class="ui-btn bg-green"><i class="fa fa-dot-circle-o"></i> Buy DVDs</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+               

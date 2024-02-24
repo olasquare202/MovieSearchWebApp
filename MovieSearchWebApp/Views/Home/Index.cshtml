@@ -1,0 +1,41 @@
+﻿@model MovieSearchWebApp.Models.SearchMovie
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Movie App Search</h1>
+
+    
+
+<fieldset>
+    
+    <legend>
+        Search By Title of the Movie @*I love d interface of this login page*@
+    </legend>
+        @using (Html.BeginForm("SearchMovieClass", "Home", FormMethod.Post))
+    {
+        <div class="row">
+            <div class="col-4">
+                @Html.LabelFor(model => model.Title)
+                  
+                
+                    
+                 @Html.TextBoxFor(model => model.Title, null, new{@class = "form-control"})
+               
+                    
+                 @Html.ValidationMessageFor(model => model.Title, null, new{@class = "text text-danger"})
+            </div>
+                <div>
+                    <input type="submit" class="btn btn-success" value="search" />
+                </div>
+            </div>
+            <div>
+                <a asp-controller="Home" asp-action="Index">Back to Portal</a>
+            </div>
+        }
+    </fieldset>
+
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
